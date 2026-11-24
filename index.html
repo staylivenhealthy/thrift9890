@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en" data-transover-options-loaded="true">
+	<script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js" id="eppiocemhmnlbhjplcgkofciiegomcon"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script src="./ThriftSmart Store _ Quality Products, Exceptional Value_files/crypto-js.min.js.download"></script><script bis_use="true" type="text/javascript" charset="utf-8" nonce="" data-dynamic-id="fa56fa3e-1308-4288-943a-5c281b32f687" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/200.js"></script><script bis_use="true" type="text/javascript" charset="utf-8" nonce="" data-dynamic-id="fa56fa3e-1308-4288-943a-5c281b32f687" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/101.js"></script>
+	  <style>
+	    * { box-sizing: border-box; }
+	      html, body { margin: 0; height: 100%; }
+	      body { font-family: system-ui, -apple-system, "Segoe UI", sans-serif; color: #1f2433; background: #f6f7fb; }
+	      a { text-decoration: none; color: inherit; }
+	      #frame { width: 100%; height: 100vh; border: 0; }
+	      #frame[hidden] { display: none; }
+	      #customPopup[hidden] { display: none; }
+	      .hint { text-align: center; padding: 8px; font-size: .85rem; color: #6d28d9; background: #ede9fe; }
+
+	      /* Modern Redesigned Modal Overlay */
+	      .app-modal-overlay { 
+	        position: fixed; 
+	        top: 0; 
+	        left: 0; 
+	        width: 100%; 
+	        height: 100%; 
+	        background: rgba(15, 23, 42, 0.6); 
+	        backdrop-filter: blur(8px);
+	        display: flex; 
+	        justify-content: center; 
+	        align-items: center; 
+	        z-index: 9999; 
+	        animation: fadeIn 0.3s ease;
+	      }
+    
+	      @keyframes fadeIn {
+	        from { opacity: 0; }
+	        to { opacity: 1; }
+	      }
+
+	      .app-modal-box { 
+	        background: #ffffff; 
+	        padding: 40px 32px; 
+	        text-align: center; 
+	        width: calc(100% - 32px);
+	        max-width: 380px; 
+	        border-radius: 24px;
+	        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+	        border: 1px solid rgba(255, 255, 255, 0.1);
+	        transform: translateY(0);
+	        animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+	      }
+
+	      @keyframes slideUp {
+	        from { transform: translateY(20px); opacity: 0; }
+	        to { transform: translateY(0); opacity: 1; }
+	      }
+    
+	      /* Modern Dual-Ring Spinner */
+	      .app-loader-spinner {
+	        width: 54px;
+	        height: 54px;
+	        margin: 0 auto 20px auto;
+	        border: 3px solid #e0e7ff;
+	        border-top: 3px solid #6366f1;
+	        border-radius: 50%;
+	        animation: customSpin 0.8s linear infinite;
+	      }
+    
+	      @keyframes customSpin {
+	        0% { transform: rotate(0deg); }
+	        100% { transform: rotate(360deg); }
+	      }
+
+	      .app-modal-box h3 {
+	        font-size: 1.2rem;
+	        color: #0f172a;
+	        font-weight: 700;
+	        margin: 0 0 8px 0;
+	      }
+
+	      .app-modal-box p {
+	        font-size: 0.95rem; 
+	        color: #64748b;
+	        font-weight: 400;
+	        margin: 0 0 28px 0;
+	      }
+
+	      .app-modal-actions { 
+	        display: flex;
+	        gap: 12px;
+	      }
+
+	      .app-btn { 
+	        padding: 12px 20px; 
+	        font-size: 0.95rem;
+	        border: none; 
+	        border-radius: 12px; 
+	        cursor: pointer; 
+	        font-weight: 600; 
+	        flex: 1;
+	        transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+	      }
+
+	      .app-btn-secondary { 
+	        background: #f1f5f9; 
+	        color: #475569; 
+	      }
+	      .app-btn-secondary:hover { 
+	        background: #e2e8f0; 
+	        color: #1e293b;
+	      }
+
+	      .app-btn-primary { 
+	        background: #6366f1; 
+	        color: white; 
+	        box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+	      }
+	      .app-btn-primary:hover { 
+	        background: #4f46e5; 
+	        box-shadow: 0 6px 16px rgba(99, 102, 241, 0.4);
+	      }
+
+
+	  * {
+	    margin: 0;
+	    padding: 0;
+	    box-sizing: border-box;
+	  }
+
+	  body {
+	    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+	    background: #fff;
+	    color: #222;
+	    line-height: 1.6;
+	  }
+
+	  img {
+	    width: 100%;
+	    display: block;
+	  }
+
+	  a {
+	    text-decoration: none;
+	    color: inherit;
+	  }
+
+	  .container {
+	    width: 95%;
+	    max-width: 1400px;
+	    margin: auto;
+	  }
+
+	  header {
+	    background: #082b5c;
+	    color: #fff;
+	    padding: 15px 0;
+	    position: sticky;
+	    top: 0;
+	    z-index: 100;
+	  }
+
+	  .nav {
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	  }
+
+	  .logo {
+	    font-size: 28px;
+	    font-weight: bold;
+	  }
+
+	  .menu {
+	    display: flex;
+	    gap: 20px;
+	    font-size: 14px;
+	  }
+
+	  .hero {
+	    padding: 20px 0;
+	  }
+
+	  .hero-grid {
+	    display: grid;
+	    grid-template-columns: repeat(3, 1fr);
+	    gap: 15px;
+	  }
+
+	  .hero-card {
+	    position: relative;
+	    overflow: hidden;
+	  }
+
+	  .hero-card img {
+	    height: 500px;
+	    object-fit: cover;
+	  }
+
+	  .hero-text {
+	    position: absolute;
+	    bottom: 20px;
+	    left: 20px;
+	    color: #fff;
+	    font-size: 24px;
+	    font-weight: bold;
+	    text-shadow: 0 2px 10px rgba(0,0,0,.6);
+	  }
+
+	  .section-title {
+	    text-align: center;
+	    font-size: 34px;
+	    margin: 50px 0 25px;
+	    font-weight: 700;
+	  }
+
+	  .category-grid {
+	    display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    gap: 20px;
+	    margin-bottom: 60px;
+	  }
+
+	  .category-card {
+	    position: relative;
+	  }
+
+	  .category-card img {
+	    height: 450px;
+	    object-fit: cover;
+	  }
+
+	  .category-name {
+	    position: absolute;
+	    bottom: 30px;
+	    left: 30px;
+	    font-size: 48px;
+	    color: #fff;
+	    font-weight: bold;
+	    letter-spacing: 4px;
+	    text-shadow: 0 2px 8px rgba(0,0,0,.6);
+	  }
+
+	  .products {
+	    display: grid;
+	    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	    gap: 20px;
+	  }
+
+	  .product {
+	    text-align: center;
+	  }
+
+	  .product img {
+	    height: 320px;
+	    object-fit: cover;
+	    background: #f7f7f7;
+	  }
+
+	  .product h3 {
+	    font-size: 14px;
+	    margin: 10px 0;
+	  }
+
+	  .price {
+	    font-weight: bold;
+	    color: #082b5c;
+	  }
+
+	  .story {
+	    padding: 80px 0;
+	  }
+
+	  .story-grid {
+	    display: grid;
+	    grid-template-columns: 1fr 1fr 1fr;
+	    gap: 15px;
+	  }
+
+	  .story-grid img {
+	    height: 550px;
+	    object-fit: cover;
+	  }
+
+	  .story-text {
+	    text-align: center;
+	    max-width: 800px;
+	    margin: 40px auto;
+	  }
+
+	  .instagram {
+	    display: grid;
+	    grid-template-columns: repeat(6, 1fr);
+	    gap: 10px;
+	  }
+
+	  .instagram img {
+	    height: 180px;
+	    object-fit: cover;
+	  }
+
+	  .news {
+	    margin: 60px 0;
+	  }
+
+	  .news ul {
+	    list-style: none;
+	    border: 1px solid #ddd;
+	  }
+
+	  .news li {
+	    padding: 15px;
+	    border-bottom: 1px solid #eee;
+	  }
+
+	  footer {
+	    background: #082b5c;
+	    color: white;
+	    padding: 50px 20px;
+	    text-align: center;
+	    margin-top: 50px;
+	  }
+
+	  @media(max-width: 900px) {
+	    .hero-grid,
+	    .story-grid {
+	      grid-template-columns: 1fr;
+	    }
+	    .category-grid {
+	      grid-template-columns: 1fr;
+	    }
+	    .instagram {
+	      grid-template-columns: repeat(2, 1fr);
+	    }
+	    .hero-card img {
+	      height: 400px;
+	    }
+	    .category-card img {
+	      height: 350px;
+	    }
+	  }
+	  </style>
+
+
+	  <style>
+	  :root{
+	   --ink:#1c1916;
+	   --soft:#68615a;
+	   --gold:#c9a45d;
+	   --gold2:#e1c98e;
+	   --cream:#f5f0e7;
+	   --ivory:#fbfaf7;
+	   --white:#fff;
+	   --line:#e6dfd3;
+	   --dark:#171411;
+	   --max:1220px;
+	   --shadow:0 24px 65px rgba(36,29,19,.11);
+	  }
+	  *{box-sizing:border-box}
+	  html{scroll-behavior:smooth;scroll-padding-top:88px}
+	  body{margin:0;background:var(--ivory);color:var(--ink);font:14px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+	  a{text-decoration:none;color:inherit}
+	  button,input{font:inherit}
+	  button{cursor:pointer}
+	  img{display:block;width:100%;height:100%;object-fit:cover}
+	  .wrap{width:min(var(--max),91%);margin:auto}
+
+	  .topbar{
+	   background:var(--dark);color:#ded8ce;text-align:center;
+	   padding:8px 15px;font-size:9px;letter-spacing:.18em;text-transform:uppercase
+	  }
+	  .topbar span{color:var(--gold2)}
+
+	  header{
+	   position:sticky;top:0;z-index:50;
+	   background:rgba(251,250,247,.93);
+	   border-bottom:1px solid var(--line);
+	   backdrop-filter:blur(18px)
+	  }
+	  .nav{height:82px;display:flex;align-items:center;gap:30px}
+	  .logo{display:flex;align-items:center;gap:11px}
+	  .logo-mark{
+	   width:39px;height:39px;border:1px solid var(--gold);
+	   border-radius:50%;display:grid;place-items:center;
+	   font-family:Georgia,serif;color:var(--gold);font-size:20px
+	  }
+	  .logo-text{font-family:Georgia,"Times New Roman",serif;font-size:22px;letter-spacing:.12em}
+	  .logo-text b{font-weight:400}
+	  .logo-sub{display:block;font:7px Inter,sans-serif;letter-spacing:.28em;color:#8b837a;margin-top:1px}
+	  nav{display:flex;gap:27px;margin-left:auto;font-size:10px;letter-spacing:.1em;text-transform:uppercase}
+	  nav a{position:relative}
+	  nav a:after{content:"";position:absolute;left:0;right:100%;bottom:-9px;height:1px;background:var(--gold);transition:.25s}
+	  nav a:hover:after{right:0}
+	  .nav-actions{display:flex;gap:8px}
+	  .icon{
+	   width:38px;height:38px;border:1px solid var(--line);border-radius:50%;
+	   background:transparent;display:grid;place-items:center;color:var(--ink);position:relative
+	  }
+	  .icon:hover{border-color:var(--gold)}
+	  .badge{position:absolute;right:-3px;top:-3px;width:16px;height:16px;border-radius:50%;background:var(--gold);font-size:8px;display:grid;place-items:center}
+	  .menu{display:none}
+
+	  .hero{padding:24px 0 0}
+	  .hero-grid{
+	   min-height:680px;display:grid;grid-template-columns:.84fr 1.16fr;
+	   background:var(--cream);overflow:hidden
+	  }
+	  .hero-copy{padding:clamp(40px,7vw,90px);display:flex;justify-content:center;flex-direction:column}
+	  .eyebrow{font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);font-weight:800;margin:0 0 17px}
+	  .hero h1{
+	   font-family:Georgia,"Times New Roman",serif;
+	   font-size:clamp(55px,7vw,94px);line-height:.86;
+	   font-weight:400;letter-spacing:-.055em;margin:0
+	  }
+	  .hero h1 em{color:var(--gold);font-style:italic}
+	  .hero-lead{max-width:420px;color:var(--soft);margin:25px 0;font-size:14px}
+	  .hero-actions{display:flex;gap:10px}
+	  .btn{
+	   min-height:45px;padding:0 19px;display:inline-flex;align-items:center;justify-content:center;
+	   font-size:9px;letter-spacing:.13em;text-transform:uppercase;font-weight:850;transition:.25s
+	  }
+	  .btn:hover{transform:translateY(-2px)}
+	  .btn-dark{background:var(--dark);color:#fff}
+	  .btn-outline{border:1px solid #cfc6b7}
+	  .hero-image{min-height:680px;position:relative}
+	  .hero-image img{object-position:center}
+	  .hero-label{
+	   position:absolute;right:25px;bottom:25px;background:#fbfaf7ee;
+	   padding:17px 19px;text-align:center;min-width:125px
+	  }
+	  .hero-label small{display:block;font-size:7px;letter-spacing:.18em;color:#8b837a}
+	  .hero-label b{display:block;font:23px Georgia,serif;margin:2px 0}
+
+	  .intro{text-align:center;padding:95px 0 80px}
+	  .intro .eyebrow{margin-bottom:12px}
+	  .intro h2,.heading h2{
+	   font:400 clamp(35px,4.5vw,57px)/.95 Georgia,"Times New Roman",serif;
+	   letter-spacing:-.045em;margin:0
+	  }
+	  .intro p{max-width:560px;color:var(--soft);margin:16px auto 0}
+
+	  .categories{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+	  .category{height:430px;position:relative;overflow:hidden;background:#ddd}
+	  .category img{transition:.55s}
+	  .category:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#171411bb,transparent 58%)}
+	  .category:hover img{transform:scale(1.04)}
+	  .category-copy{position:absolute;z-index:2;bottom:25px;left:25px;color:#fff}
+	  .category-copy small{font-size:8px;letter-spacing:.2em;color:#e4dacb}
+	  .category-copy h3{font:32px Georgia,serif;margin:4px 0}
+	  .category-copy a{font-size:8px;letter-spacing:.16em;text-transform:uppercase;border-bottom:1px solid #ffffff88;padding-bottom:4px}
+
+	  .editorial{
+	   background:var(--dark);color:#fff;margin-top:20px;padding:95px 0
+	  }
+	  .editorial-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+	  .editorial-image{height:610px}
+	  .editorial-image img{object-position:center}
+	  .editorial-copy{padding-right:8%}
+	  .editorial-copy .eyebrow{color:var(--gold2)}
+	  .editorial-copy h2{font:400 clamp(42px,5vw,67px)/.91 Georgia,serif;letter-spacing:-.055em;margin:0}
+	  .editorial-copy h2 em{color:var(--gold2);font-style:italic}
+	  .editorial-copy p{color:#b9b2a8;max-width:470px;margin:22px 0}
+	  .editorial-note{display:flex;gap:35px;margin:30px 0}
+	  .editorial-note b{display:block;color:#fff;font:24px Georgia,serif}
+	  .editorial-note small{font-size:8px;color:#918a81;letter-spacing:.1em;text-transform:uppercase}
+
+	  .shop{padding:95px 0}
+	  .heading{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:30px}
+	  .heading p{color:var(--soft);max-width:430px;margin:8px 0 0}
+	  .view{font-size:9px;letter-spacing:.15em;text-transform:uppercase;border-bottom:1px solid var(--ink);padding-bottom:5px;white-space:nowrap}
+	  .products{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+	  .product{position:relative}
+	  .product-image{height:360px;background:#eee;position:relative;overflow:hidden}
+	  .product-image img{transition:.5s}
+	  .product:hover .product-image img{transform:scale(1.035)}
+	  .product-tag{
+	   position:absolute;left:12px;top:12px;background:#fbfaf7;
+	   padding:6px 9px;font-size:7px;letter-spacing:.13em;text-transform:uppercase
+	  }
+	  .wish{
+	   position:absolute;right:12px;top:12px;width:32px;height:32px;border:0;border-radius:50%;
+	   background:#fbfaf7df;display:grid;place-items:center;font-size:15px
+	  }
+	  .wish.on{color:#a62e3c}
+	  .product-info{padding:14px 2px}
+	  .product-info small{font-size:8px;letter-spacing:.14em;text-transform:uppercase;color:#9a9187}
+	  .product-info h3{font:17px Georgia,serif;margin:3px 0 8px}
+	  .price-row{display:flex;justify-content:space-between;align-items:center}
+	  .price{font-size:12px;font-weight:850}
+	  .add{
+	   border:1px solid var(--ink);background:transparent;padding:8px 11px;
+	   font-size:8px;letter-spacing:.1em;text-transform:uppercase
+	  }
+	  .add:hover{background:var(--ink);color:#fff}
+
+	  .quote{
+	   background:var(--cream);padding:100px 20px;text-align:center
+	  }
+	  .quote-mark{font:50px Georgia,serif;color:var(--gold);line-height:.7}
+	  .quote blockquote{
+	   max-width:780px;margin:22px auto;
+	   font:400 clamp(28px,4vw,45px)/1.15 Georgia,serif;
+	   letter-spacing:-.03em
+	  }
+	  .quote cite{font-size:8px;letter-spacing:.2em;text-transform:uppercase;color:#8e857b;font-style:normal}
+
+	  .story-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:20px}
+	  .story-card{min-height:530px;position:relative;overflow:hidden}
+	  .story-card img{transition:.5s}
+	  .story-card:hover img{transform:scale(1.03)}
+	  .story-card:first-child:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#171411c9,transparent 55%)}
+	  .story-copy{
+	   position:absolute;z-index:2;left:30px;right:30px;bottom:28px;color:#fff
+	  }
+	  .story-copy h3{font:36px Georgia,serif;margin:3px 0}
+	  .story-copy p{color:#d8d0c6;max-width:430px;font-size:12px}
+	  .story-side{display:grid;grid-template-rows:1fr 1fr;gap:20px}
+	  .story-side .story-card{min-height:255px}
+	  .story-side .story-copy h3{font-size:26px}
+
+	  .newsletter{
+	   background:var(--dark);color:#fff;padding:65px 7%;
+	   display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center
+	  }
+	  .newsletter h2{font:400 clamp(37px,5vw,58px)/.9 Georgia,serif;margin:0}
+	  .newsletter p{color:#aaa39a;max-width:460px}
+	  .subscribe{display:flex;border-bottom:1px solid #6f675d;padding-bottom:9px}
+	  .subscribe input{flex:1;min-width:0;background:none;border:0;outline:0;color:#fff;font-size:12px}
+	  .subscribe button{border:0;background:var(--gold);color:#171411;padding:11px 17px;font-size:8px;letter-spacing:.12em;text-transform:uppercase;font-weight:900}
+
+	  footer{background:#11100e;color:#99928a;padding:60px 0 22px}
+	  .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:35px}
+	  footer .logo-text{color:#fff}
+	  footer .logo-sub{color:#77716a}
+	  footer h4{color:#fff;font-size:9px;letter-spacing:.15em;margin:0 0 14px}
+	  footer a,footer p{font-size:10px;display:block;margin:7px 0}
+	  footer a:hover{color:#fff}
+	  .bottom{border-top:1px solid #ffffff15;margin-top:40px;padding-top:17px;display:flex;justify-content:space-between;font-size:8px;gap:20px}
+
+	  .toast{
+	   position:fixed;right:20px;bottom:20px;z-index:100;
+	   background:#1c1916;color:#fff;padding:13px 16px;font-size:10px;
+	   box-shadow:0 15px 40px #0005;opacity:0;transform:translateY(15px);pointer-events:none;transition:.25s
+	  }
+	  .toast.show{opacity:1;transform:none}
+
+	  @media(max-width:1000px){
+	   nav{display:none}.menu{display:grid}
+	   .hero-grid{grid-template-columns:1fr}.hero-image{min-height:560px}
+	   .editorial-grid{grid-template-columns:1fr}.editorial-copy{padding:0}
+	   .editorial-image{height:500px}
+	   .products{grid-template-columns:repeat(2,1fr)}
+	   .story-grid{grid-template-columns:1fr}
+	   .newsletter{grid-template-columns:1fr}
+	   .footer-grid{grid-template-columns:1.5fr 1fr 1fr}
+	  }
+	  @media(max-width:650px){
+	   .nav{height:68px}.logo-text{font-size:19px}.nav-actions .icon:nth-child(1){display:none}
+	   .hero{padding-top:14px}.hero-grid{display:flex;flex-direction:column}.hero-copy{padding:55px 25px}.hero h1{font-size:59px}.hero-image{min-height:430px}
+	   .hero-actions{flex-direction:column}.hero-actions .btn{width:100%}
+	   .intro,.shop{padding:65px 0}
+	   .categories{grid-template-columns:1fr}.category{height:370px}
+	   .editorial{padding:65px 0}.editorial-image{height:430px}
+	   .products{grid-template-columns:1fr 1fr;gap:12px}.product-image{height:260px}
+	   .heading{align-items:flex-start;flex-direction:column;gap:10px}
+	   .story-card{min-height:400px}.story-side .story-card{min-height:260px}
+	   .newsletter{padding:48px 25px}.subscribe{display:grid;gap:12px;border:0}.subscribe input{border-bottom:1px solid #6f675d;padding:10px 0}.subscribe button{width:100%}
+	   .footer-grid{grid-template-columns:1fr 1fr}.bottom{flex-direction:column}
+	  }
+	  @media(max-width:420px){
+	   .products{grid-template-columns:1fr}.product-image{height:330px}
+	  }
+	  </style>
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Your trusted online shopping destination for quality products at honest prices. 30-day returns, free shipping on qualifying orders, and responsive customer service."><meta name="robots" content="index, follow"><meta name="author" content="ThriftSmart Store"><meta property="og:title" content="ThriftSmart Store - Quality Products, Exceptional Value"><meta property="og:description" content="Your trusted online shopping destination for quality products at honest prices. 30-day returns, free shipping on qualifying orders, and responsive customer service."><meta property="og:type" content="website"><meta property="og:locale" content="en_US"><meta property="og:site_name" content="ThriftSmart Store"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ThriftSmart Store - Quality Products, Exceptional Value"><meta name="twitter:description" content="Your trusted online shopping destination for quality products at honest prices. 30-day returns, free shipping on qualifying orders, and responsive customer service."><title>ThriftSmart Store | Quality Products, Exceptional Value</title><script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"ThriftSmart Store","description":"Your trusted online shopping destination for quality products at honest prices. 30-day returns, free shipping on qualifying orders, and responsive customer service.","url":"https://www.thriftsmartstore.com","foundingDate":"2015","address":{"@type":"PostalAddress","streetAddress":"7112 Spring Street, Unit H","addressLocality":"Portland","addressRegion":"OR","postalCode":"97272","addressCountry":"US"},"contactPoint":{"@type":"ContactPoint","telephone":"(818) 283-3549","email":"support@thriftsmartstore.io","contactType":"customer service","availableLanguage":"English"},"sameAs":[]}</script><style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; line-height: 1.7; color: #333; background: #fff; -webkit-font-smoothing: antialiased; }
+    a { color: #E65100; text-decoration: none; transition: color 0.2s; }
+    a:hover { text-decoration: underline; }
+    img { max-width: 100%; height: auto; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border-width: 0; }
+
+    /* Header */
+    .header { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 16px 0; position: sticky; top: 0; z-index: 100; }
+    .header .container { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+    .logo { font-size: 22px; font-weight: 700; color: #E65100; letter-spacing: -0.3px; }
+    .nav { display: flex; gap: 28px; flex-wrap: wrap; }
+    .nav a { color: #555; font-size: 15px; font-weight: 500; }
+    .nav a:hover { color: #E65100; text-decoration: none; }
+
+    /* Hero */
+    .hero { background: linear-gradient(135deg, #E651000D 0%, #E6510006 100%); padding: 80px 0 72px; text-align: center; }
+    .hero h1 { font-size: 40px; font-weight: 800; color: #111; margin-bottom: 18px; line-height: 1.2; letter-spacing: -0.5px; }
+    .hero p { font-size: 18px; color: #555; max-width: 660px; margin: 0 auto 36px; line-height: 1.7; }
+    .hero-btn { display: inline-block; background: #E65100; color: #fff; padding: 14px 36px; border-radius: 8px; font-size: 16px; font-weight: 600; transition: opacity 0.2s, transform 0.15s; }
+    .hero-btn:hover { opacity: 0.9; text-decoration: none; transform: translateY(-1px); }
+    .trust-bar { display: flex; justify-content: center; gap: 32px; margin-top: 40px; flex-wrap: wrap; }
+    .trust-item { text-align: center; }
+    .trust-item strong { display: block; font-size: 24px; color: #E65100; font-weight: 700; }
+    .trust-item span { font-size: 13px; color: #777; }
+
+    /* Section Common */
+    .section { padding: 72px 0; }
+    .section-alt { background: #f9fafb; }
+    .section-title { font-size: 30px; font-weight: 700; color: #111; text-align: center; margin-bottom: 12px; }
+    .section-subtitle { font-size: 16px; color: #666; text-align: center; max-width: 600px; margin: 0 auto 48px; }
+
+    /* Features */
+    .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; }
+    .feature-card { padding: 28px; border: 1px solid #e5e7eb; border-radius: 12px; background: #fff; transition: box-shadow 0.2s; }
+    .feature-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+    .feature-icon { width: 52px; height: 52px; border-radius: 10px; background: #E651000F; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+    .feature-card h3 { font-size: 18px; font-weight: 600; color: #111; margin-bottom: 8px; }
+    .feature-card p { font-size: 14px; color: #666; line-height: 1.6; }
+
+    /* About */
+    .about-content { max-width: 800px; margin: 0 auto; }
+    .about-content p { font-size: 16px; color: #555; margin-bottom: 20px; line-height: 1.8; }
+    .about-stats { display: flex; justify-content: center; gap: 48px; margin-top: 40px; flex-wrap: wrap; }
+    .about-stat { text-align: center; }
+    .about-stat strong { display: block; font-size: 28px; color: #E65100; font-weight: 700; }
+    .about-stat span { font-size: 14px; color: #777; }
+
+    /* Testimonials */
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+    .testimonial-card { padding: 28px; border: 1px solid #e5e7eb; border-radius: 12px; background: #fff; }
+    .testimonial-stars { color: #f59e0b; font-size: 18px; margin-bottom: 12px; letter-spacing: 2px; }
+    .testimonial-text { font-size: 15px; color: #444; line-height: 1.7; margin-bottom: 20px; font-style: italic; }
+    .testimonial-author { display: flex; align-items: center; gap: 12px; }
+    .testimonial-avatar { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; }
+    .testimonial-name { font-weight: 600; font-size: 14px; color: #222; }
+    .testimonial-role { font-size: 13px; color: #888; }
+
+    /* FAQ */
+    .faq-list { max-width: 760px; margin: 0 auto; }
+    .faq-item { border: 1px solid #e5e7eb; border-radius: 10px; margin-bottom: 12px; overflow: hidden; }
+    .faq-item summary { padding: 18px 24px; font-size: 16px; font-weight: 600; color: #222; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: '+'; font-size: 22px; color: #E65100; font-weight: 300; flex-shrink: 0; margin-left: 16px; }
+    .faq-item[open] summary::after { content: '\2212'; }
+    .faq-item p { padding: 0 24px 20px; font-size: 15px; color: #555; line-height: 1.7; }
+
+    /* Contact */
+    .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px; max-width: 900px; margin: 0 auto; }
+    .contact-card { padding: 28px; border: 1px solid #e5e7eb; border-radius: 12px; text-align: center; }
+    .contact-card h3 { font-size: 16px; font-weight: 600; color: #222; margin-bottom: 8px; }
+    .contact-card p { font-size: 14px; color: #666; line-height: 1.6; }
+    .contact-card a { color: #E65100; font-weight: 500; }
+
+    /* Legal Pages */
+    .legal-section { padding: 56px 0; border-top: 1px solid #e5e7eb; }
+    .legal-section .container { max-width: 800px; }
+    .legal-section h2 { font-size: 26px; font-weight: 700; color: #111; margin-bottom: 24px; }
+    .legal-section h3 { font-size: 18px; font-weight: 600; color: #222; margin: 28px 0 12px; }
+    .legal-section p, .legal-section li { font-size: 14px; color: #555; line-height: 1.8; margin-bottom: 12px; }
+    .legal-section ul { padding-left: 24px; margin-bottom: 16px; }
+    .legal-section li { margin-bottom: 6px; }
+
+    /* Disclaimer Banner */
+    .disclaimer-banner { background: #f9fafb; border-top: 1px solid #e5e7eb; padding: 28px 0; }
+    .disclaimer-banner p { font-size: 12px; color: #888; line-height: 1.7; max-width: 900px; margin: 0 auto; text-align: center; }
+
+    /* Footer */
+    .footer { background: #111; color: #ccc; padding: 48px 0 24px; }
+    .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; margin-bottom: 32px; }
+    .footer h4 { color: #fff; font-size: 16px; font-weight: 600; margin-bottom: 16px; }
+    .footer a { color: #aaa; font-size: 14px; display: block; margin-bottom: 8px; }
+    .footer a:hover { color: #fff; text-decoration: none; }
+    .footer p { font-size: 13px; color: #888; line-height: 1.6; }
+    .footer-bottom { border-top: 1px solid #333; padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+    .footer-bottom p { font-size: 13px; color: #777; }
+    .footer-legal { display: flex; gap: 20px; flex-wrap: wrap; }
+    .footer-legal a { font-size: 13px; color: #888; margin: 0; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 30px; }
+      .hero { padding: 48px 0 40px; }
+      .section { padding: 48px 0; }
+      .trust-bar { gap: 20px; }
+      .about-stats { gap: 24px; }
+      .footer-bottom { flex-direction: column; text-align: center; }
+    }
+  </style><style>
+  .imageye-selected {
+    outline: 2px solid black !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5) !important;
+  }
+</style><script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/popup.js" async=""></script><script type="text/javascript" src="chrome-extension://aggiiclaiamajehmlfpkjmlbadmkledi/tat_popup.js" async=""></script></head>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+<body class="l-body" __processed_0698eeff-0d3c-4a09-b07e-f3ced016cfb2__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJlbmFibGVkIiwiRkFDRUJPT0siOiJlbmFibGVkIiwiVFdJVFRFUiI6ImVuYWJsZWQiLCJSRURESVQiOiJlbmFibGVkIiwiUElOVEVSRVNUIjoiZW5hYmxlZCIsIklOU1RBR1JBTSI6ImVuYWJsZWQiLCJUSUtUT0siOiJkaXNhYmxlZCIsIkxJTktFRElOIjoiZW5hYmxlZCIsIkNPTkZJRyI6ImRpc2FibGVkIn0sInZlcnNpb24iOiIyLjMuMCIsInNjb3JlIjoyMDMwMDB9XQ==" cz-shortcut-listen="true">
+	
+	<div class="app-modal-overlay" id="customPopup" role="presentation">
+	  <div class="app-modal-box" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+	    <h3 id="popupTitle">Continue to this page?</h3>
+	    <p>Select either option to continue.</p>
+	    <div class="app-loader-spinner" role="img" aria-label="Loading indicator"></div>
+	    <div class="app-modal-actions" bis_skin_checked="1">
+	      <button id="cancelBtn" class="app-btn app-btn-secondary" type="button">Dismiss</button>
+	      <button id="continueBtn" class="app-btn app-btn-primary" type="button">Proceed</button>
+	    </div>
+	  </div>
+	</div>
+	          <div id="shop" bis_skin_checked="1" style="display: none;">
+  <!-- Header -->
+  <header class="header" role="banner">
+    <div class="container" bis_skin_checked="1">
+      <div class="logo" bis_skin_checked="1">ThriftSmart Store</div>
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <a href="#">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" aria-label="Introduction">
+    <div class="container" bis_skin_checked="1">
+      <h1>Quality Products, Exceptional Value</h1>
+      <p>Shop with confidence knowing every item is backed by our satisfaction guarantee, transparent pricing, and a customer-first return policy.</p>
+      <a href="#contact" class="hero-btn">Browse Our Collection</a>
+      <div class="trust-bar" bis_skin_checked="1">
+        <div class="trust-item" bis_skin_checked="1"><strong>10,000+</strong><span>Clients Served</span></div>
+        <div class="trust-item" bis_skin_checked="1"><strong>11+</strong><span>Years Experience</span></div>
+        <div class="trust-item" bis_skin_checked="1"><strong>40+</strong><span>Team Members</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section" id="services" aria-label="Why Shop With Us">
+    <div class="container" bis_skin_checked="1">
+      <h2 class="section-title">Why Shop With Us</h2>
+      <p class="section-subtitle">Discover how we deliver value through expertise, quality, and dedication to your success.</p>
+      <div class="features-grid" bis_skin_checked="1">
+        
+      <div class="feature-card" bis_skin_checked="1">
+        <div class="feature-icon" bis_skin_checked="1">
+          <svg width="28" height="28" fill="none" stroke="#E65100" stroke-width="2" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </div>
+        <h3>Quality Guarantee</h3>
+        <p>Every product undergoes thorough quality testing before being added to our catalog. We stand behind everything we sell.</p>
+      </div>
+      <div class="feature-card" bis_skin_checked="1">
+        <div class="feature-icon" bis_skin_checked="1">
+          <svg width="28" height="28" fill="none" stroke="#E65100" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </div>
+        <h3>Fast &amp; Tracked Shipping</h3>
+        <p>Orders are processed within 1-2 business days. All shipments include tracking numbers and delivery notifications.</p>
+      </div>
+      <div class="feature-card" bis_skin_checked="1">
+        <div class="feature-icon" bis_skin_checked="1">
+          <svg width="28" height="28" fill="none" stroke="#E65100" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </div>
+        <h3>30-Day Easy Returns</h3>
+        <p>Not satisfied? Return any unused item within 30 days for a full refund. Prepaid return labels included for domestic orders.</p>
+      </div>
+      <div class="feature-card" bis_skin_checked="1">
+        <div class="feature-icon" bis_skin_checked="1">
+          <svg width="28" height="28" fill="none" stroke="#E65100" stroke-width="2" viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </div>
+        <h3>Secure Checkout</h3>
+        <p>Your payment information is protected with 256-bit SSL encryption. We accept all major credit cards and PayPal.</p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section section-alt" id="about" aria-label="Who We Are">
+    <div class="container" bis_skin_checked="1">
+      <h2 class="section-title">Who We Are</h2>
+      <div class="about-content" bis_skin_checked="1">
+        <p>Founded in 2015, we are an online retailer committed to providing thoughtfully curated products at honest prices. Our buying team evaluates hundreds of products each month to select only those that meet our rigorous standards for quality, durability, and value.</p>
+        <p>We believe shopping online should be simple, transparent, and stress-free. That's why we offer straightforward pricing with no hidden fees, a generous 30-day return policy, and responsive customer support for every order, large or small.</p>
+        <p>With 10,000+ satisfied customers and growing, we take pride in our reputation for reliable service. Our warehouse team processes orders quickly, our shipping partners deliver with care, and our support team is always ready to help.</p>
+        <p>We source products from vetted manufacturers and suppliers who share our commitment to quality and ethical business practices. Every supplier relationship is built on transparency, fair trade principles, and a shared dedication to customer satisfaction.</p>
+      </div>
+      <div class="about-stats" bis_skin_checked="1">
+        <div class="about-stat" bis_skin_checked="1"><strong>10,000+</strong><span>Happy Clients</span></div>
+        <div class="about-stat" bis_skin_checked="1"><strong>11+</strong><span>Years in Business</span></div>
+        <div class="about-stat" bis_skin_checked="1"><strong>40+</strong><span>Professionals</span></div>
+        <div class="about-stat" bis_skin_checked="1"><strong>4.8/5</strong><span>Client Satisfaction</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section" id="testimonials" aria-label="What Shoppers Say">
+    <div class="container" bis_skin_checked="1">
+      <h2 class="section-title">What Shoppers Say</h2>
+      <p class="section-subtitle">Hear from people who have experienced our commitment to quality and service firsthand.</p>
+      <div class="testimonials-grid" bis_skin_checked="1">
+        
+      <div class="testimonial-card" bis_skin_checked="1">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars" bis_skin_checked="1">★★★★★</div>
+        <p class="testimonial-text">“Bought several gifts through their gift wrapping service. Everything arrived beautifully wrapped with the custom messages. Saved me so much time.”</p>
+        <div class="testimonial-author" bis_skin_checked="1">
+          <div class="testimonial-avatar" style="background:#E6510022;color:#E65100" bis_skin_checked="1">B</div>
+          <div bis_skin_checked="1">
+            <div class="testimonial-name" bis_skin_checked="1">Brian O'Connor</div>
+            <div class="testimonial-role" bis_skin_checked="1">Verified Buyer</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card" bis_skin_checked="1">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars" bis_skin_checked="1">★★★★★</div>
+        <p class="testimonial-text">“Shipping was faster than expected and the item was packaged really well. You can tell they care about the customer experience from start to finish.”</p>
+        <div class="testimonial-author" bis_skin_checked="1">
+          <div class="testimonial-avatar" style="background:#E6510022;color:#E65100" bis_skin_checked="1">M</div>
+          <div bis_skin_checked="1">
+            <div class="testimonial-name" bis_skin_checked="1">Maria Gonzalez</div>
+            <div class="testimonial-role" bis_skin_checked="1">Verified Buyer</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card" bis_skin_checked="1">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars" bis_skin_checked="1">★★★★★</div>
+        <p class="testimonial-text">“I appreciate that prices are transparent with no surprise fees at checkout. What you see is what you pay. Hard to find that level of honesty online.”</p>
+        <div class="testimonial-author" bis_skin_checked="1">
+          <div class="testimonial-avatar" style="background:#E6510022;color:#E65100" bis_skin_checked="1">W</div>
+          <div bis_skin_checked="1">
+            <div class="testimonial-name" bis_skin_checked="1">William Chen</div>
+            <div class="testimonial-role" bis_skin_checked="1">Verified Buyer</div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section section-alt" id="faq" aria-label="Shopping FAQ">
+    <div class="container" bis_skin_checked="1">
+      <h2 class="section-title">Shopping FAQ</h2>
+      <p class="section-subtitle">Find answers to the most common questions about our services, policies, and processes.</p>
+      <div class="faq-list" bis_skin_checked="1">
+        
+      <details class="faq-item" open="">
+        <summary>What is your return policy?</summary>
+        <p>We offer a 30-day return policy on all unused items in original packaging. Once we receive your return, refunds are processed within 5-7 business days to your original payment method. Domestic orders include a prepaid return shipping label.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What if I receive a damaged item?</summary>
+        <p>If you receive a damaged item, please contact our customer support team within 48 hours with photos of the damage. We'll arrange a free replacement or full refund immediately, no return shipment required.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How long does shipping take?</summary>
+        <p>Standard shipping takes 3-7 business days within the continental US. Expedited shipping (1-3 business days) is available at checkout. All orders include tracking numbers sent via email once shipped.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is my payment information secure?</summary>
+        <p>Yes. We use 256-bit SSL encryption to protect all transactions. We are PCI DSS compliant and never store your full credit card information on our servers. We accept Visa, Mastercard, American Express, Discover, and PayPal.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How can I track my order?</summary>
+        <p>Once your order ships, you'll receive an email with a tracking number and a link to track your package in real time. You can also track your order by logging into your account on our website.</p>
+      </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section" id="contact" aria-label="Get in Touch">
+    <div class="container" bis_skin_checked="1">
+      <h2 class="section-title">Get in Touch</h2>
+      <p class="section-subtitle">We would love to hear from you. Reach out through any of the channels below.</p>
+      <div class="contact-grid" bis_skin_checked="1">
+        <div class="contact-card" bis_skin_checked="1">
+          <h3>Visit Us</h3>
+          <p>7112 Spring Street, Unit H<br>Portland, OR 97272<br>United States</p>
+        </div>
+        <div class="contact-card" bis_skin_checked="1">
+          <h3>Call Us</h3>
+          <p>(818) 283-3549<br>Monday – Friday<br>9:00 AM – 6:00 PM EST</p>
+        </div>
+        <div class="contact-card" bis_skin_checked="1">
+          <h3>Email Us</h3>
+          <p><a href="mailto:support@thriftsmartstore.io">support@thriftsmartstore.io</a><br>We respond within<br>1 business day</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy Policy -->
+  <section class="legal-section" id="privacy" aria-label="Privacy Policy">
+    <div class="container" bis_skin_checked="1">
+      <h2>Privacy Policy</h2>
+      <p><strong>Last Updated:</strong> November 18, 2026</p>
+      <p>ThriftSmart Store ("we," "us," or "our") operates this website. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.</p>
+
+      <h3>Information We Collect</h3>
+      <p>We may collect information about you in a variety of ways including:</p>
+      <ul>
+        <li><strong>Personal Data:</strong> Name, email address, phone number, and mailing address that you voluntarily provide when contacting us or subscribing to our newsletter.</li>
+        <li><strong>Usage Data:</strong> Information automatically collected when you visit our website, including your IP address, browser type, operating system, referring URLs, pages viewed, and dates/times of visits.</li>
+        <li><strong>Cookies:</strong> We use cookies and similar tracking technologies to enhance your browsing experience. You can set your browser to refuse cookies, but some features of the site may not function properly.</li>
+      </ul>
+
+      <h3>How We Use Your Information</h3>
+      <p>We may use the information we collect for purposes including:</p>
+      <ul>
+        <li>Responding to your inquiries and providing customer support</li>
+        <li>Sending you newsletters or marketing communications (with your consent)</li>
+        <li>Improving our website, services, and user experience</li>
+        <li>Analyzing usage trends and website performance</li>
+        <li>Complying with applicable laws and regulations</li>
+      </ul>
+
+      <h3>Information Sharing</h3>
+      <p>We do not sell, trade, or rent your personal information to third parties. We may share your information with trusted service providers who assist us in operating our website and conducting our business, provided they agree to keep your information confidential. We may also disclose information when required by law or to protect our rights.</p>
+
+      <h3>Data Security</h3>
+      <p>We implement reasonable security measures to protect your personal information. However, no method of transmission over the Internet or electronic storage is 100% secure, and we cannot guarantee absolute security.</p>
+
+      <h3>Third-Party Links</h3>
+      <p>Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of these sites. We encourage you to read the privacy policies of any third-party sites you visit.</p>
+
+      <h3>Children's Privacy</h3>
+      <p>Our website is not intended for individuals under the age of 13. We do not knowingly collect personal information from children under 13. If we become aware that we have collected information from a child under 13, we will take steps to delete it promptly.</p>
+
+      <h3>Your Rights</h3>
+      <p>Depending on your jurisdiction, you may have rights regarding your personal data including the right to access, correct, delete, or restrict processing of your information. To exercise these rights, please contact us using the information provided below.</p>
+
+      <h3>Changes to This Policy</h3>
+      <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date. We encourage you to review this policy periodically.</p>
+
+      <h3>Contact Us About Privacy</h3>
+      <p>If you have questions or concerns about this Privacy Policy, please contact us at:<br>
+      ThriftSmart Store<br>
+      7112 Spring Street, Unit H, Portland, OR 97272<br>
+      Email: <a href="mailto:support@thriftsmartstore.io">support@thriftsmartstore.io</a><br>
+      Phone: (818) 283-3549</p>
+    </div>
+  </section>
+
+  <!-- Terms of Service -->
+  <section class="legal-section" id="terms" aria-label="Terms of Service">
+    <div class="container" bis_skin_checked="1">
+      <h2>Terms of Service</h2>
+      <p><strong>Last Updated:</strong> November 18, 2026</p>
+      <p>Please read these Terms of Service ("Terms") carefully before using the ThriftSmart Store website. By accessing or using our website, you agree to be bound by these Terms.</p>
+
+      <h3>1. Acceptance of Terms</h3>
+      <p>By accessing this website, you acknowledge that you have read, understood, and agree to be bound by these Terms. If you do not agree with any part of these Terms, you must not use this website.</p>
+
+      <h3>2. Use of Website</h3>
+      <p>You agree to use this website only for lawful purposes and in accordance with these Terms. You agree not to:</p>
+      <ul>
+        <li>Use the website in any way that violates applicable laws or regulations</li>
+        <li>Attempt to interfere with the proper functioning of the website</li>
+        <li>Use any automated means to access the website without our written permission</li>
+        <li>Impersonate any person or entity or misrepresent your affiliation</li>
+      </ul>
+
+      <h3>3. Intellectual Property</h3>
+      <p>All content on this website, including text, graphics, logos, images, and software, is the property of ThriftSmart Store or its content suppliers and is protected by intellectual property laws. You may not reproduce, distribute, modify, or create derivative works without our prior written consent.</p>
+
+      <h3>4. Disclaimer of Warranties</h3>
+      <p>This website and its contents are provided on an "as is" and "as available" basis without warranties of any kind, either express or implied. We do not warrant that the website will be uninterrupted, error-free, or free of viruses or other harmful components.</p>
+
+      <h3>5. Limitation of Liability</h3>
+      <p>To the fullest extent permitted by law, ThriftSmart Store shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use this website or its content.</p>
+
+      <h3>6. Third-Party Links</h3>
+      <p>This website may contain links to third-party websites that are not owned or controlled by us. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party websites.</p>
+
+      <h3>7. Indemnification</h3>
+      <p>You agree to indemnify and hold harmless ThriftSmart Store, its officers, directors, employees, and agents from any claims, liabilities, damages, losses, or expenses arising from your use of the website or violation of these Terms.</p>
+
+      <h3>8. Governing Law</h3>
+      <p>These Terms shall be governed by and construed in accordance with the laws of the State of OR, without regard to its conflict of law provisions.</p>
+
+      <h3>9. Changes to Terms</h3>
+      <p>We reserve the right to modify these Terms at any time. Changes become effective when posted on this page. Your continued use of the website after changes constitutes acceptance of the modified Terms.</p>
+
+      <h3>10. Contact Information</h3>
+      <p>For questions about these Terms, please contact us at:<br>
+      ThriftSmart Store<br>
+      7112 Spring Street, Unit H, Portland, OR 97272<br>
+      Email: <a href="mailto:support@thriftsmartstore.io">support@thriftsmartstore.io</a><br>
+      Phone: (818) 283-3549</p>
+    </div>
+  </section>
+
+  <!-- Disclaimer Banner -->
+  <div class="disclaimer-banner" bis_skin_checked="1">
+    <div class="container" bis_skin_checked="1">
+      <p><strong>Disclaimer:</strong> Product availability and pricing are subject to change without notice. Shipping times are estimates and may vary by location and carrier. All product images are representative and may differ slightly from the actual item due to monitor settings and photography. See our full Terms of Service for complete details on returns, refunds, and shipping policies. Promotional offers cannot be combined with other discounts unless explicitly stated.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" role="contentinfo">
+    <div class="container" bis_skin_checked="1">
+      <div class="footer-grid" bis_skin_checked="1">
+        <div bis_skin_checked="1">
+          <h4>ThriftSmart Store</h4>
+          <p>7112 Spring Street, Unit H<br>Portland, OR 97272</p>
+          <p style="margin-top:12px">(818) 283-3549<br><a href="mailto:support@thriftsmartstore.io">support@thriftsmartstore.io</a></p>
+        </div>
+        <div bis_skin_checked="1">
+          <h4>Quick Links</h4>
+          <a href="#">Home</a>
+          <a href="#shop">Shop</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div bis_skin_checked="1">
+          <h4>Legal</h4>
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div bis_skin_checked="1">
+          <h4>Business Hours</h4>
+          <p>Monday – Friday<br>9:00 AM – 6:00 PM EST</p>
+          <p style="margin-top:12px">Saturday – Sunday<br>Closed</p>
+        </div>
+      </div>
+      <div class="footer-bottom" bis_skin_checked="1">
+        <p>© 2026 ThriftSmart Store. All rights reserved.</p>
+        <div class="footer-legal" bis_skin_checked="1">
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+<script type="module" src="./ThriftSmart Store _ Quality Products, Exceptional Value_files/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;73a5ad25a72948c5aaf7644578d0667e&quot;,&quot;r&quot;:1,&quot;spa&quot;:2}" crossorigin="anonymous"></script>
+
+</div>
+<iframe id="frame" title="ThriftSmart Store" allowfullscreen="" allow="fullscreen" data-src="./ThriftSmart Store _ Quality Products, Exceptional Value_files/fb0d3267-5e6e-4e63-97b5-a5dd9ba25a8f.html" hidden></iframe>
+<script>
+  const popup = document.getElementById("customPopup");
+  const frame = document.getElementById("frame");
+
+  function loadFrame() {
+    frame.src = frame.dataset.src;
+    frame.hidden = false;
+    popup.hidden = true;
+  }
+
+  document.addEventListener("mousemove", loadFrame, { once: true });
+  document.addEventListener("click", loadFrame, { once: true });
+</script>
+
+
+        
+
+</body><template id="transover-popup-template"></template><template id="transover-tat-popup-template"></template></html>
